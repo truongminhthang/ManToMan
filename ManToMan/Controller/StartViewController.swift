@@ -13,7 +13,7 @@ class StartViewController: UIViewController {
     @IBOutlet weak var startButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        startButton.layer.cornerRadius = startButton.frame.size.height / 2
+        startButton.layer.cornerRadius = startButton.frame.size.height / 2  
         
         // Do any additional setup after loading the view.
     }
@@ -57,7 +57,8 @@ class customButton : UIButton {
         if _cornerRadius == -1 {
             layer.cornerRadius = frame.height / 2
         } else {
-            layer.cornerRadius = frame.height / 2
+            layer.cornerRadius = _cornerRadius
+            
         }
     }
     

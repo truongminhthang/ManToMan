@@ -10,7 +10,7 @@ import UIKit
 typealias JSON = Dictionary<AnyHashable, Any>
 class getDataFromPlist {
     static let shared = getDataFromPlist()
-    private init(){
+    private init() {
         readFileCity()
         readFileDistrict()
     }

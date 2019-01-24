@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="HBp-gt-QL3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--JobVC-->
+        <scene sceneID="RSh-cB-BFc">
+            <objects>
+                <viewController storyboardIdentifier="JobVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HBp-gt-QL3" customClass="JobVC" customModule="ManToMan" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qhz-ah-zpy"/>
+                        <viewControllerLayoutGuide type="bottom" id="Kjr-qY-LQH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tgj-aZ-FY2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vtc-5b-KRj">
+                                <rect key="frame" x="35" y="357" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Llf-ig-uwU">
+                                <rect key="frame" x="0.0" y="64" width="375" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VVh-Ti-l1T" customClass="VerticalButton" customModule="ManToMan" customModuleProvider="target">
+                                        <rect key="frame" x="250.5" y="0.0" width="124.5" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="Job category" image="ic_arrow_down"/>
+                                    </button>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gJa-Vw-alg" userLabel="hiddenView" customClass="Popview" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="124.5" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIM-Ty-7Eq" customClass="VerticalButton" customModule="ManToMan" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="124.5" height="60"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="Service" image="ic_arrow_down"/>
+                                        <connections>
+                                            <action selector="serviceAction:" destination="HBp-gt-QL3" eventType="touchDown" id="n8J-fI-w0c"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Smc-9Z-Q00" customClass="VerticalButton" customModule="ManToMan" customModuleProvider="target">
+                                        <rect key="frame" x="125.5" y="0.0" width="124" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="Salary" image="ic_arrow_down"/>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="agl-xH-kO3">
+                                        <rect key="frame" x="124.5" y="6" width="1" height="48"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="1" id="fyG-5D-oYb"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ga2-FN-3xe">
+                                        <rect key="frame" x="249.5" y="6" width="1" height="48"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="1" id="h34-uE-bk7"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="agl-xH-kO3" firstAttribute="leading" secondItem="uIM-Ty-7Eq" secondAttribute="trailing" id="5Xp-PA-szj"/>
+                                    <constraint firstItem="Smc-9Z-Q00" firstAttribute="width" secondItem="VVh-Ti-l1T" secondAttribute="width" id="8RY-t4-cQb"/>
+                                    <constraint firstItem="Smc-9Z-Q00" firstAttribute="top" secondItem="Llf-ig-uwU" secondAttribute="top" id="DWl-DL-RCc"/>
+                                    <constraint firstItem="uIM-Ty-7Eq" firstAttribute="top" secondItem="Llf-ig-uwU" secondAttribute="top" id="FZh-HE-5Nt"/>
+                                    <constraint firstAttribute="bottom" secondItem="Smc-9Z-Q00" secondAttribute="bottom" id="KfN-XF-iVV"/>
+                                    <constraint firstAttribute="height" constant="60" id="L7Z-ev-R1c"/>
+                                    <constraint firstAttribute="bottom" secondItem="VVh-Ti-l1T" secondAttribute="bottom" id="LAS-Ux-mmO"/>
+                                    <constraint firstItem="uIM-Ty-7Eq" firstAttribute="width" secondItem="VVh-Ti-l1T" secondAttribute="width" id="MYy-fj-mZ3"/>
+                                    <constraint firstAttribute="trailing" secondItem="VVh-Ti-l1T" secondAttribute="trailing" id="Rgv-Nw-UdP"/>
+                                    <constraint firstItem="ga2-FN-3xe" firstAttribute="top" secondItem="Llf-ig-uwU" secondAttribute="top" constant="6" id="Sev-xl-zxb"/>
+                                    <constraint firstItem="agl-xH-kO3" firstAttribute="top" secondItem="Llf-ig-uwU" secondAttribute="top" constant="6" id="bFN-Gz-hwi"/>
+                                    <constraint firstAttribute="bottom" secondItem="agl-xH-kO3" secondAttribute="bottom" constant="6" id="bmv-iq-8hD"/>
+                                    <constraint firstAttribute="bottom" secondItem="ga2-FN-3xe" secondAttribute="bottom" constant="6" id="d0u-i5-gz1"/>
+                                    <constraint firstItem="uIM-Ty-7Eq" firstAttribute="leading" secondItem="Llf-ig-uwU" secondAttribute="leading" id="eRb-fq-Lyb"/>
+                                    <constraint firstAttribute="bottom" secondItem="uIM-Ty-7Eq" secondAttribute="bottom" id="ezM-vl-sle"/>
+                                    <constraint firstItem="VVh-Ti-l1T" firstAttribute="leading" secondItem="ga2-FN-3xe" secondAttribute="trailing" id="fXq-jV-eNY"/>
+                                    <constraint firstItem="VVh-Ti-l1T" firstAttribute="top" secondItem="Llf-ig-uwU" secondAttribute="top" id="qot-eL-nvy"/>
+                                    <constraint firstItem="Smc-9Z-Q00" firstAttribute="leading" secondItem="agl-xH-kO3" secondAttribute="trailing" id="uYy-8z-yiU"/>
+                                    <constraint firstItem="ga2-FN-3xe" firstAttribute="leading" secondItem="Smc-9Z-Q00" secondAttribute="trailing" id="uyG-ut-ooT"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Llf-ig-uwU" firstAttribute="leading" secondItem="tgj-aZ-FY2" secondAttribute="leading" id="P4N-de-sO8"/>
+                            <constraint firstItem="Llf-ig-uwU" firstAttribute="top" secondItem="qhz-ah-zpy" secondAttribute="bottom" id="VLm-Bg-mNq"/>
+                            <constraint firstAttribute="trailing" secondItem="Llf-ig-uwU" secondAttribute="trailing" id="ied-pY-brO"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="1w7-zw-z29"/>
+                    <navigationItem key="navigationItem" title="JobVC" id="47x-Zc-6aI"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="jobFilterButton" destination="VVh-Ti-l1T" id="yZz-25-sbU"/>
+                        <outlet property="placeFilterButton" destination="uIM-Ty-7Eq" id="pfk-MB-NDE"/>
+                        <outlet property="popView" destination="gJa-Vw-alg" id="EVl-Nf-85X"/>
+                        <outlet property="salaryFilterButton" destination="Smc-9Z-Q00" id="uwH-JQ-asu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nmR-8D-Crk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5821.6000000000004" y="815.44227886056979"/>
+        </scene>
+        <!--Popover ServiceVC-->
+        <scene sceneID="YFE-Kb-ZId">
+            <objects>
+                <viewController storyboardIdentifier="popoverServiceVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="NNp-T8-ysY" customClass="popoverServiceVC" customModule="ManToMan" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="giF-Wg-D0t"/>
+                        <viewControllerLayoutGuide type="bottom" id="dJb-rp-w9B"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NNk-Pk-g29">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.9949391085" green="0.93333333330000001" blue="0.83137254900000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9fy-Qi-4cb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6736.8000000000002" y="814.54272863568224"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_arrow_down" width="24" height="24"/>
+    </resources>
+</document>

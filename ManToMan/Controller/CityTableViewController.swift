@@ -65,11 +65,7 @@ class CityTableViewController: UIViewController, UITableViewDataSource,UITableVi
             alpha: alpha
         )
     }
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        var selectedCell:UITableViewCell = tableView.cellForRow(at: indexPath)!
-//        selectedCell.contentView.backgroundColor = UIColorFromRGB(rgbValue: 0xfe6d8c, alpha: 0.66)
-//        
-//    }
+
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
