@@ -33,6 +33,10 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <state key="normal" title="Job category" image="ic_arrow_down"/>
                                     </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p2d-4u-XmQ" userLabel="hiddenTopView">
+                                        <rect key="frame" x="4" y="0.0" width="120.5" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gJa-Vw-alg" userLabel="hiddenView" customClass="Popview" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="124.5" height="60"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -81,10 +85,14 @@
                                     <constraint firstItem="agl-xH-kO3" firstAttribute="top" secondItem="Llf-ig-uwU" secondAttribute="top" constant="6" id="bFN-Gz-hwi"/>
                                     <constraint firstAttribute="bottom" secondItem="agl-xH-kO3" secondAttribute="bottom" constant="6" id="bmv-iq-8hD"/>
                                     <constraint firstAttribute="bottom" secondItem="ga2-FN-3xe" secondAttribute="bottom" constant="6" id="d0u-i5-gz1"/>
+                                    <constraint firstItem="p2d-4u-XmQ" firstAttribute="trailing" secondItem="uIM-Ty-7Eq" secondAttribute="trailing" id="dJi-3n-1YS"/>
                                     <constraint firstItem="uIM-Ty-7Eq" firstAttribute="leading" secondItem="Llf-ig-uwU" secondAttribute="leading" id="eRb-fq-Lyb"/>
                                     <constraint firstAttribute="bottom" secondItem="uIM-Ty-7Eq" secondAttribute="bottom" id="ezM-vl-sle"/>
                                     <constraint firstItem="VVh-Ti-l1T" firstAttribute="leading" secondItem="ga2-FN-3xe" secondAttribute="trailing" id="fXq-jV-eNY"/>
+                                    <constraint firstItem="p2d-4u-XmQ" firstAttribute="height" secondItem="uIM-Ty-7Eq" secondAttribute="height" id="mWT-Rc-jss"/>
+                                    <constraint firstItem="p2d-4u-XmQ" firstAttribute="top" secondItem="uIM-Ty-7Eq" secondAttribute="top" id="pJ7-dd-cHT"/>
                                     <constraint firstItem="VVh-Ti-l1T" firstAttribute="top" secondItem="Llf-ig-uwU" secondAttribute="top" id="qot-eL-nvy"/>
+                                    <constraint firstItem="p2d-4u-XmQ" firstAttribute="leading" secondItem="uIM-Ty-7Eq" secondAttribute="leading" constant="4" id="rZo-Pm-rWI"/>
                                     <constraint firstItem="Smc-9Z-Q00" firstAttribute="leading" secondItem="agl-xH-kO3" secondAttribute="trailing" id="uYy-8z-yiU"/>
                                     <constraint firstItem="ga2-FN-3xe" firstAttribute="leading" secondItem="Smc-9Z-Q00" secondAttribute="trailing" id="uyG-ut-ooT"/>
                                 </constraints>
@@ -101,6 +109,7 @@
                     <navigationItem key="navigationItem" title="JobVC" id="47x-Zc-6aI"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
+                        <outlet property="hiddenTopView" destination="p2d-4u-XmQ" id="uBH-zB-RlX"/>
                         <outlet property="jobFilterButton" destination="VVh-Ti-l1T" id="yZz-25-sbU"/>
                         <outlet property="placeFilterButton" destination="uIM-Ty-7Eq" id="pfk-MB-NDE"/>
                         <outlet property="popView" destination="gJa-Vw-alg" id="EVl-Nf-85X"/>

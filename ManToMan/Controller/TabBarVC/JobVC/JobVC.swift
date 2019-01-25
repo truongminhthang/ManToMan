@@ -11,10 +11,17 @@ import UIKit
 class JobVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIPopoverPresentationControllerDelegate {
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var hiddenTopView: UIView!
     @IBOutlet weak var popView: Popview!
+//    @IBOutlet weak var salaryPopView: <#type#>!
+//    @IBOutlet weak var jobPopView: <#type#>!
     @IBOutlet weak var placeFilterButton: VerticalButton!
     @IBOutlet weak var salaryFilterButton: VerticalButton!
     @IBOutlet weak var jobFilterButton: VerticalButton!
+    
+    var isTapped : Bool = false {
+        didSet {}
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,7 +29,12 @@ class JobVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIPop
         setupApperanceVerticalButton()
 //        centerVertically()
         popView.isHidden = true
+        hiddenTopView.isHidden = true
         setAppearancePopView()
+        setAppearanceHiddenTopView()
+        
+        
+        
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -32,10 +44,14 @@ class JobVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIPop
     func setAppearancePopView() {
 //        popView.frame.origin.x = placeFilterButton.frame.origin.x
 //        popView.frame.origin.y = placeFilterButton.frame.origin.y
-        popView.topAnchor.constraint(equalTo: self.placeFilterButton.bottomAnchor, constant: 0)
+        popView.topAnchor.constraint(equalTo: self.placeFilterButton.bottomAnchor, constant: 60)
         popView.frame.size = self.view.frame.size
+        popView.frame.origin.y = self.view.frame.origin.y + 60
     }
     
+    func setAppearanceHiddenTopView() {
+        hiddenTopView.backgroundColor = UIColor.red
+    }
     func setupApperanceVerticalButton() {
         //TODO: set up image for Button.
         jobFilterButton.imageView?.image = #imageLiteral(resourceName: "ic_arrow_down")
@@ -57,20 +73,27 @@ class JobVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIPop
         
         return cell
     }
+    // Sửa hiddenTopView, chưa hiện ra được
     
     // MARK: - ACTION
     @IBAction func serviceAction(_ sender: UIButton) {
-//        if sender.isSelected {
-            popView.isHidden = false
-//        popView.isHidden = placeFilterButton.isSelected ? false : true
-        view.bringSubviewToFront(popView)
+        popView.isHidden = !popView.isHidden
+        hiddenTopView.isHidden = !hiddenTopView.isHidden
+        !popView.isHidden ? view.bringSubviewToFront(popView) : view.bringSubviewToFront(placeFilterButton)
+        !hiddenTopView.isHidden ? view.bringSubviewToFront(hiddenTopView) : view.bringSubviewToFront(placeFilterButton)
+//        if !popView.isHidden {
+//            view.bringSubviewToFront(popView)
+//            view.bringSubviewToFront(hiddenTopView)
+//        } else {
+//            view.bringSubviewToFront(placeFilterButton)
 //        }
+//        popView.isHidden = sender.isSelected ? false : true
+//        view.bringSubviewToFront(popView)
 
+        
+        
     }
-    // MARK: - Prepare :
-//    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
-//        return .none
-//    }
+
 
 }
 
