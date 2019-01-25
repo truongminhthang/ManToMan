@@ -42,7 +42,7 @@
 		696B4B9BF89B37D7ED385E6E /* Pods_ManToMan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 707ED920EC84B5DD53901CEF /* Pods_ManToMan.framework */; };
 		842552EE21FAF4D30040E69A /* Jobs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842552EC21FAF4D30040E69A /* Jobs.storyboard */; };
 		842552F121FAF4DA0040E69A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842552EF21FAF4DA0040E69A /* Main.storyboard */; };
-		842552F421FAF71E0040E69A /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842552F321FAF71E0040E69A /* ChatVC.swift */; };
+		842552F421FAF71E0040E69A /* ChatVC._Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842552F321FAF71E0040E69A /* ChatVC._Demo.swift */; };
 		988C3BBC21D078D6006FCE2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988C3BBB21D078D6006FCE2C /* AppDelegate.swift */; };
 		988C3BC321D078D7006FCE2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 988C3BC221D078D7006FCE2C /* Assets.xcassets */; };
 		988C3BC621D078D7006FCE2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 988C3BC421D078D7006FCE2C /* LaunchScreen.storyboard */; };
@@ -87,7 +87,7 @@
 		707ED920EC84B5DD53901CEF /* Pods_ManToMan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ManToMan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		842552ED21FAF4D30040E69A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ManToMan/Base.lproj/Jobs.storyboard; sourceTree = "<group>"; };
 		842552F021FAF4DA0040E69A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ManToMan/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		842552F321FAF71E0040E69A /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		842552F321FAF71E0040E69A /* ChatVC._Demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC._Demo.swift; sourceTree = "<group>"; };
 		988C3BB821D078D6006FCE2C /* ManToMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ManToMan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		988C3BBB21D078D6006FCE2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		988C3BC221D078D7006FCE2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -193,7 +193,7 @@
 		54FB8D1A21D27D9A00D9DB07 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				842552F221FAF6D60040E69A /* ChatVC */,
+				842552F221FAF6D60040E69A /* ChatVC_Demo */,
 				548B99FB21EDC80500193310 /* TabBarVC */,
 				54FB8D1B21D27DDE00D9DB07 /* StartViewController.swift */,
 				54FB8D1D21D27E0B00D9DB07 /* CityTableViewController.swift */,
@@ -208,12 +208,12 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		842552F221FAF6D60040E69A /* ChatVC */ = {
+		842552F221FAF6D60040E69A /* ChatVC_Demo */ = {
 			isa = PBXGroup;
 			children = (
-				842552F321FAF71E0040E69A /* ChatVC.swift */,
+				842552F321FAF71E0040E69A /* ChatVC._Demo.swift */,
 			);
-			path = ChatVC;
+			path = ChatVC_Demo;
 			sourceTree = "<group>";
 		};
 		988C3BAF21D078D6006FCE2C = {
@@ -422,7 +422,7 @@
 				54FB8D1521D2460900D9DB07 /* GetDataFromPlist.swift in Sources */,
 				543F0CE421E745E8007D5EED /* ChatViewController.swift in Sources */,
 				988C3BBC21D078D6006FCE2C /* AppDelegate.swift in Sources */,
-				842552F421FAF71E0040E69A /* ChatVC.swift in Sources */,
+				842552F421FAF71E0040E69A /* ChatVC._Demo.swift in Sources */,
 				543CB55421E799B5002DC31A /* Global.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
