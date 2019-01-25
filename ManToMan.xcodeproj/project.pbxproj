@@ -61,7 +61,7 @@
 		543F0CE321E745E8007D5EED /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		543F0CE521E7509C007D5EED /* SpeechManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechManager.swift; sourceTree = "<group>"; };
 		543F274421F540DF004D7908 /* popoverServiceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = popoverServiceVC.swift; sourceTree = "<group>"; };
-		545348FB21F563250051DD29 /* Jobs.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Jobs.storyboard; path = /Users/toan/Desktop/ManToMan/ManToMan/Jobs.storyboard; sourceTree = "<absolute>"; };
+		545348FB21F563250051DD29 /* Jobs.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Jobs.storyboard; path = /Users/toan/Desktop/ManToMan/ManToMan/Base.lproj/Jobs.storyboard; sourceTree = "<absolute>"; };
 		545348FC21F5646D0051DD29 /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		5453490021F6C80B0051DD29 /* jobs.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = jobs.plist; sourceTree = "<group>"; };
 		5453490221F6CAB50051DD29 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };

@@ -37,7 +37,7 @@ class AgeViewController: UIViewController, UIPickerViewDataSource, UIPickerViewD
 //        tapGestureAgeVC.delegate = self
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(pushVC))
         tap.numberOfTapsRequired = 2
-        tap.cancelsTouchesInView = false
+//        tap.cancelsTouchesInView = false
         agePickerView.addGestureRecognizer(tap)
     }
     @objc func pushVC(){
