@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -30,29 +31,38 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VVh-Ti-l1T" customClass="VerticalButton" customModule="ManToMan" customModuleProvider="target">
                                         <rect key="frame" x="250.5" y="0.0" width="124.5" height="60"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Job category" image="ic_arrow_down"/>
+                                        <state key="selected" title="Work Location">
+                                            <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                     </button>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p2d-4u-XmQ" userLabel="hiddenTopView">
-                                        <rect key="frame" x="4" y="0.0" width="120.5" height="60"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gJa-Vw-alg" userLabel="hiddenView" customClass="Popview" customModuleProvider="target">
+                                    <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gJa-Vw-alg" userLabel="hiddenView" customClass="Popview" customModule="ManToMan" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="124.5" height="60"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIM-Ty-7Eq" customClass="VerticalButton" customModule="ManToMan" customModuleProvider="target">
+                                    <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="uIM-Ty-7Eq" customClass="VerticalButton" customModule="ManToMan" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="124.5" height="60"/>
-                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Service" image="ic_arrow_down"/>
+                                        <state key="selected" title="Work  Location">
+                                            <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="serviceAction:" destination="HBp-gt-QL3" eventType="touchDown" id="n8J-fI-w0c"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Smc-9Z-Q00" customClass="VerticalButton" customModule="ManToMan" customModuleProvider="target">
                                         <rect key="frame" x="125.5" y="0.0" width="124" height="60"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="tintColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         <state key="normal" title="Salary" image="ic_arrow_down"/>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="agl-xH-kO3">
@@ -85,14 +95,10 @@
                                     <constraint firstItem="agl-xH-kO3" firstAttribute="top" secondItem="Llf-ig-uwU" secondAttribute="top" constant="6" id="bFN-Gz-hwi"/>
                                     <constraint firstAttribute="bottom" secondItem="agl-xH-kO3" secondAttribute="bottom" constant="6" id="bmv-iq-8hD"/>
                                     <constraint firstAttribute="bottom" secondItem="ga2-FN-3xe" secondAttribute="bottom" constant="6" id="d0u-i5-gz1"/>
-                                    <constraint firstItem="p2d-4u-XmQ" firstAttribute="trailing" secondItem="uIM-Ty-7Eq" secondAttribute="trailing" id="dJi-3n-1YS"/>
                                     <constraint firstItem="uIM-Ty-7Eq" firstAttribute="leading" secondItem="Llf-ig-uwU" secondAttribute="leading" id="eRb-fq-Lyb"/>
                                     <constraint firstAttribute="bottom" secondItem="uIM-Ty-7Eq" secondAttribute="bottom" id="ezM-vl-sle"/>
                                     <constraint firstItem="VVh-Ti-l1T" firstAttribute="leading" secondItem="ga2-FN-3xe" secondAttribute="trailing" id="fXq-jV-eNY"/>
-                                    <constraint firstItem="p2d-4u-XmQ" firstAttribute="height" secondItem="uIM-Ty-7Eq" secondAttribute="height" id="mWT-Rc-jss"/>
-                                    <constraint firstItem="p2d-4u-XmQ" firstAttribute="top" secondItem="uIM-Ty-7Eq" secondAttribute="top" id="pJ7-dd-cHT"/>
                                     <constraint firstItem="VVh-Ti-l1T" firstAttribute="top" secondItem="Llf-ig-uwU" secondAttribute="top" id="qot-eL-nvy"/>
-                                    <constraint firstItem="p2d-4u-XmQ" firstAttribute="leading" secondItem="uIM-Ty-7Eq" secondAttribute="leading" constant="4" id="rZo-Pm-rWI"/>
                                     <constraint firstItem="Smc-9Z-Q00" firstAttribute="leading" secondItem="agl-xH-kO3" secondAttribute="trailing" id="uYy-8z-yiU"/>
                                     <constraint firstItem="ga2-FN-3xe" firstAttribute="leading" secondItem="Smc-9Z-Q00" secondAttribute="trailing" id="uyG-ut-ooT"/>
                                 </constraints>
@@ -109,7 +115,6 @@
                     <navigationItem key="navigationItem" title="JobVC" id="47x-Zc-6aI"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
-                        <outlet property="hiddenTopView" destination="p2d-4u-XmQ" id="uBH-zB-RlX"/>
                         <outlet property="jobFilterButton" destination="VVh-Ti-l1T" id="yZz-25-sbU"/>
                         <outlet property="placeFilterButton" destination="uIM-Ty-7Eq" id="pfk-MB-NDE"/>
                         <outlet property="popView" destination="gJa-Vw-alg" id="EVl-Nf-85X"/>
@@ -136,7 +141,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9fy-Qi-4cb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6736.8000000000002" y="814.54272863568224"/>
+            <point key="canvasLocation" x="6607" y="831"/>
         </scene>
     </scenes>
     <resources>

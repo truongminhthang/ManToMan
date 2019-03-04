@@ -18,6 +18,8 @@
 		543F0CE421E745E8007D5EED /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543F0CE321E745E8007D5EED /* ChatViewController.swift */; };
 		543F0CE621E7509C007D5EED /* SpeechManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543F0CE521E7509C007D5EED /* SpeechManager.swift */; };
 		543F274521F540DF004D7908 /* popoverServiceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543F274421F540DF004D7908 /* popoverServiceVC.swift */; };
+		54465526221D2FCC00F3B7BD /* hiddenTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54465524221D2FCC00F3B7BD /* hiddenTopView.swift */; };
+		54465527221D2FCC00F3B7BD /* hiddenTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54465525221D2FCC00F3B7BD /* hiddenTopView.xib */; };
 		545348FD21F5646D0051DD29 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545348FC21F5646D0051DD29 /* JSON.swift */; };
 		5453490121F6C80B0051DD29 /* jobs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5453490021F6C80B0051DD29 /* jobs.plist */; };
 		5453490321F6CAB50051DD29 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5453490221F6CAB50051DD29 /* File.swift */; };
@@ -61,6 +63,8 @@
 		543F0CE321E745E8007D5EED /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		543F0CE521E7509C007D5EED /* SpeechManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechManager.swift; sourceTree = "<group>"; };
 		543F274421F540DF004D7908 /* popoverServiceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = popoverServiceVC.swift; sourceTree = "<group>"; };
+		54465524221D2FCC00F3B7BD /* hiddenTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hiddenTopView.swift; sourceTree = "<group>"; };
+		54465525221D2FCC00F3B7BD /* hiddenTopView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = hiddenTopView.xib; sourceTree = "<group>"; };
 		545348FB21F563250051DD29 /* Jobs.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Jobs.storyboard; path = /Users/toan/Desktop/ManToMan/ManToMan/Base.lproj/Jobs.storyboard; sourceTree = "<absolute>"; };
 		545348FC21F5646D0051DD29 /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		5453490021F6C80B0051DD29 /* jobs.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = jobs.plist; sourceTree = "<group>"; };
@@ -142,6 +146,8 @@
 			children = (
 				5453490C21F83BCA0051DD29 /* Popview.xib */,
 				5453490E21F83DA90051DD29 /* Popview.swift */,
+				54465524221D2FCC00F3B7BD /* hiddenTopView.swift */,
+				54465525221D2FCC00F3B7BD /* hiddenTopView.xib */,
 			);
 			path = Popview;
 			sourceTree = "<group>";
@@ -322,6 +328,7 @@
 				5453490121F6C80B0051DD29 /* jobs.plist in Resources */,
 				54FB8D1221D22DBF00D9DB07 /* Districts.plist in Resources */,
 				988C3BC321D078D7006FCE2C /* Assets.xcassets in Resources */,
+				54465527221D2FCC00F3B7BD /* hiddenTopView.xib in Resources */,
 				988C3BC121D078D6006FCE2C /* Main.storyboard in Resources */,
 				5453490421F707130051DD29 /* Jobs.storyboard in Resources */,
 				547C954921E73EC100F5321C /* Podfile in Resources */,
@@ -391,6 +398,7 @@
 				54FB8D1E21D27E0B00D9DB07 /* CityTableViewController.swift in Sources */,
 				543F0CE621E7509C007D5EED /* SpeechManager.swift in Sources */,
 				5425BE4421F4BA7A007EB9B7 /* VerticalButton.swift in Sources */,
+				54465526221D2FCC00F3B7BD /* hiddenTopView.swift in Sources */,
 				540068D321EF0B7F00998CA7 /* ChatVC.swift in Sources */,
 				54734B2F21DF274600DC208C /* RegistrationStatusViewController.swift in Sources */,
 				548B99FF21EDC8CB00193310 /* TabBarController.swift in Sources */,

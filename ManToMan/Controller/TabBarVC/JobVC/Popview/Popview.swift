@@ -12,7 +12,7 @@ import UIKit
 //    <#requirements#>
 //}
 
-
+@IBDesignable
 class Popview: UIView {
     
     @IBOutlet var ServicePopview: UIView!
@@ -24,6 +24,14 @@ class Popview: UIView {
     @IBOutlet weak var filterButton: UIButton!
     @IBOutlet weak var popBody: UIView!
 
+    //TODO: Round View corner
+    
+//    @IBInspectable var cornerRadius: CGFloat = 5.0 {
+//        didSet {
+//            popBody.layer.cornerRadius = cornerRadius
+//        }
+//    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         configureXIB()
@@ -33,6 +41,7 @@ class Popview: UIView {
         super.init(coder: aDecoder)
         configureXIB()
     }
+    
     func configureXIB() {
         
         ServicePopview = configureNib()
@@ -45,7 +54,13 @@ class Popview: UIView {
         
         ServicePopview.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         
+        popBody.layer.cornerRadius = 5.0
         // Adding custom subview on top of our view (over any custom drawing > see note below)
+//        let path = UIBezierPath(roundedRect: self.bounds, byRoundingCorners: [.topLeft, .topRight, .bottomLeft, .bottomRight], cornerRadii: CGSize(width: 10, height: 10))
+//        let maskLayer = CAShapeLayer()
+//        maskLayer.path = path.cgPath
+//        //        self.roundCorners([.topLeft, .topRight], radius: 10)
+//        self.layer.mask = maskLayer
         
         addSubview(ServicePopview)
         
@@ -63,6 +78,10 @@ class Popview: UIView {
         
     }
     
+    
+    override func draw(_ rect: CGRect) {
+
+    }
 //    private func commonInit() {
 //
 //        Bundle.main.loadNibNamed("Popview", owner: self, options: nil)

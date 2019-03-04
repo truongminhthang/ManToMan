@@ -26,19 +26,18 @@ class JobVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIPop
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        setupApperanceVerticalButton()
+//        setupApperanceVerticalButton()
 //        centerVertically()
         popView.isHidden = true
-        hiddenTopView.isHidden = true
         setAppearancePopView()
-        setAppearanceHiddenTopView()
-        
-        
-        
+//        placeFilterButton.contentEdgeInsets.top = -20
+
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        setupApperanceVerticalButton()
+//        setupApperanceVerticalButton()
+        
     }
     
     func setAppearancePopView() {
@@ -49,20 +48,18 @@ class JobVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIPop
         popView.frame.origin.y = self.view.frame.origin.y + 60
     }
     
-    func setAppearanceHiddenTopView() {
-        hiddenTopView.backgroundColor = UIColor.red
-    }
-    func setupApperanceVerticalButton() {
-        //TODO: set up image for Button.
-        jobFilterButton.imageView?.image = #imageLiteral(resourceName: "ic_arrow_down")
-        salaryFilterButton.imageView?.image = #imageLiteral(resourceName: "ic_arrow_down")
-        placeFilterButton.imageView?.image = #imageLiteral(resourceName: "ic_arrow_down")
-        
-        jobFilterButton.titleLabel?.text = "Job category"
-        salaryFilterButton.titleLabel?.text = "Salary"
-        placeFilterButton.titleLabel?.text = "Service"
-        
-    }
+
+//    func setupApperanceVerticalButton() {
+//        //TODO: set up image for Button.
+//        jobFilterButton.imageView?.image = #imageLiteral(resourceName: "ic_arrow_down")
+//        salaryFilterButton.imageView?.image = #imageLiteral(resourceName: "ic_arrow_down")
+//        placeFilterButton.imageView?.image = #imageLiteral(resourceName: "ic_arrow_down")
+//
+//        jobFilterButton.titleLabel?.text = "Job category"
+//        salaryFilterButton.titleLabel?.text = "Salary"
+//        placeFilterButton.titleLabel?.text = "Service"
+//
+//    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
@@ -73,26 +70,25 @@ class JobVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIPop
         
         return cell
     }
-    // Sửa hiddenTopView, chưa hiện ra được
-    
+    //FIXME: Chua an duoc Image khi Select button ( fixed)
     // MARK: - ACTION
     @IBAction func serviceAction(_ sender: UIButton) {
+        sender.isSelected = !sender.isSelected
+        sender.contentVerticalAlignment = .center
         popView.isHidden = !popView.isHidden
-        hiddenTopView.isHidden = !hiddenTopView.isHidden
         !popView.isHidden ? view.bringSubviewToFront(popView) : view.bringSubviewToFront(placeFilterButton)
-        !hiddenTopView.isHidden ? view.bringSubviewToFront(hiddenTopView) : view.bringSubviewToFront(placeFilterButton)
-//        if !popView.isHidden {
-//            view.bringSubviewToFront(popView)
-//            view.bringSubviewToFront(hiddenTopView)
-//        } else {
-//            view.bringSubviewToFront(placeFilterButton)
-//        }
-//        popView.isHidden = sender.isSelected ? false : true
-//        view.bringSubviewToFront(popView)
-
+        if sender.isSelected {
+        sender.setImage(nil, for: .normal)
+        
+        sender.layoutIfNeeded()
+        } else {
+            sender.setImage(UIImage(named: "ic_arrow_down"), for: .normal)
+        }
+        
         
         
     }
+
 
 
 }
