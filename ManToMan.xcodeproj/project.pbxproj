@@ -47,6 +47,7 @@
 		988C3BC121D078D6006FCE2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 988C3BBF21D078D6006FCE2C /* Main.storyboard */; };
 		988C3BC321D078D7006FCE2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 988C3BC221D078D7006FCE2C /* Assets.xcassets */; };
 		988C3BC621D078D7006FCE2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 988C3BC421D078D7006FCE2C /* LaunchScreen.storyboard */; };
+		E535D7E8222E1B980064F893 /* Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E535D7E7222E1B980064F893 /* Test.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,6 +98,7 @@
 		988C3BC721D078D7006FCE2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC03B3C9F58C8D4227D0160E /* Pods-ManToMan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ManToMan.release.xcconfig"; path = "Pods/Target Support Files/Pods-ManToMan/Pods-ManToMan.release.xcconfig"; sourceTree = "<group>"; };
 		C4D885E1897F5AAD183A6329 /* Pods-ManToMan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ManToMan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ManToMan/Pods-ManToMan.debug.xcconfig"; sourceTree = "<group>"; };
+		E535D7E7222E1B980064F893 /* Test.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Test.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +238,7 @@
 				543F0CE121E7444D007D5EED /* AppDelegate */,
 				54FB8D1321D241F700D9DB07 /* Model */,
 				8403A7D8222E0DAB0034E52A /* Jobs.storyboard */,
+				E535D7E7222E1B980064F893 /* Test.storyboard */,
 				988C3BBF21D078D6006FCE2C /* Main.storyboard */,
 				54FB8D1A21D27D9A00D9DB07 /* Controller */,
 				988C3BC221D078D7006FCE2C /* Assets.xcassets */,
@@ -328,6 +331,7 @@
 				5453490D21F83BCA0051DD29 /* Popview.xib in Resources */,
 				5453490121F6C80B0051DD29 /* jobs.plist in Resources */,
 				54FB8D1221D22DBF00D9DB07 /* Districts.plist in Resources */,
+				E535D7E8222E1B980064F893 /* Test.storyboard in Resources */,
 				988C3BC321D078D7006FCE2C /* Assets.xcassets in Resources */,
 				54465527221D2FCC00F3B7BD /* hiddenTopView.xib in Resources */,
 				988C3BC121D078D6006FCE2C /* Main.storyboard in Resources */,
