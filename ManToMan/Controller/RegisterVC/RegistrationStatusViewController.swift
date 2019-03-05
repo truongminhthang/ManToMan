@@ -41,7 +41,7 @@ class RegistrationStatusViewController: UIViewController,UITableViewDelegate,UIT
         paragraphStype.alignment = NSTextAlignment.center
         let attributed = [NSAttributedString.Key.font: titleLabel.font, NSAttributedString.Key.paragraphStyle: paragraphStype]
         let text = NSMutableAttributedString(string: "Man To Man \n Please let me know the registration status")
-        text.addAttributes(attributed, range: NSRange(location: 0, length: text.length))
+        text.addAttributes(attributed as [NSAttributedString.Key : Any], range: NSRange(location: 0, length: text.length))
         titleLabel.attributedText = text
         tableView.tableHeaderView = titleLabel
         tableView.backgroundColor = UIColorFromRGB(rgbValue: 0xFEEED4, alpha: 1.00)

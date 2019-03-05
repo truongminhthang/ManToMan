@@ -41,6 +41,8 @@
 		54FB8D2221D3604C00D9DB07 /* GenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FB8D2121D3604C00D9DB07 /* GenderViewController.swift */; };
 		54FB8D2421D3638200D9DB07 /* AgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FB8D2321D3638200D9DB07 /* AgeViewController.swift */; };
 		54FB8D2621D4C83200D9DB07 /* CityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FB8D2521D4C83200D9DB07 /* CityTableViewCell.swift */; };
+		576E91C2222E09F900DFC3DA /* JobMaster.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 576E91C0222E09F900DFC3DA /* JobMaster.storyboard */; };
+		5774DA7F222D204C00841E3A /* Jobs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5774DA7D222D204C00841E3A /* Jobs.storyboard */; };
 		696B4B9BF89B37D7ED385E6E /* Pods_ManToMan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 707ED920EC84B5DD53901CEF /* Pods_ManToMan.framework */; };
 		8403A7DA222E0DAB0034E52A /* Jobs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8403A7D8222E0DAB0034E52A /* Jobs.storyboard */; };
 		988C3BBC21D078D6006FCE2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988C3BBB21D078D6006FCE2C /* AppDelegate.swift */; };
@@ -62,9 +64,9 @@
 		543F0CDF21E7437B007D5EED /* ApiAI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ApiAI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		543F0CE321E745E8007D5EED /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		543F0CE521E7509C007D5EED /* SpeechManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechManager.swift; sourceTree = "<group>"; };
-		543F274421F540DF004D7908 /* popoverServiceVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = popoverServiceVC.swift; sourceTree = "<group>"; };
-		54465524221D2FCC00F3B7BD /* hiddenTopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = hiddenTopView.swift; sourceTree = "<group>"; };
-		54465525221D2FCC00F3B7BD /* hiddenTopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = hiddenTopView.xib; sourceTree = "<group>"; };
+		543F274421F540DF004D7908 /* popoverServiceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = popoverServiceVC.swift; sourceTree = "<group>"; };
+		54465524221D2FCC00F3B7BD /* hiddenTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hiddenTopView.swift; sourceTree = "<group>"; };
+		54465525221D2FCC00F3B7BD /* hiddenTopView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = hiddenTopView.xib; sourceTree = "<group>"; };
 		545348FC21F5646D0051DD29 /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		5453490021F6C80B0051DD29 /* jobs.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = jobs.plist; sourceTree = "<group>"; };
 		5453490221F6CAB50051DD29 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
@@ -81,12 +83,14 @@
 		54FB8D1121D22DBF00D9DB07 /* Districts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Districts.plist; sourceTree = "<group>"; };
 		54FB8D1421D2460900D9DB07 /* GetDataFromPlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDataFromPlist.swift; sourceTree = "<group>"; };
 		54FB8D1621D2611A00D9DB07 /* City District.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "City District.swift"; sourceTree = "<group>"; };
-		54FB8D1B21D27DDE00D9DB07 /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
-		54FB8D1D21D27E0B00D9DB07 /* CityTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityTableViewController.swift; sourceTree = "<group>"; };
-		54FB8D1F21D27E1B00D9DB07 /* DistrictTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DistrictTableViewController.swift; sourceTree = "<group>"; };
-		54FB8D2121D3604C00D9DB07 /* GenderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenderViewController.swift; sourceTree = "<group>"; };
-		54FB8D2321D3638200D9DB07 /* AgeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgeViewController.swift; sourceTree = "<group>"; };
-		54FB8D2521D4C83200D9DB07 /* CityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityTableViewCell.swift; sourceTree = "<group>"; };
+		54FB8D1B21D27DDE00D9DB07 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		54FB8D1D21D27E0B00D9DB07 /* CityTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTableViewController.swift; sourceTree = "<group>"; };
+		54FB8D1F21D27E1B00D9DB07 /* DistrictTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistrictTableViewController.swift; sourceTree = "<group>"; };
+		54FB8D2121D3604C00D9DB07 /* GenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderViewController.swift; sourceTree = "<group>"; };
+		54FB8D2321D3638200D9DB07 /* AgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeViewController.swift; sourceTree = "<group>"; };
+		54FB8D2521D4C83200D9DB07 /* CityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTableViewCell.swift; sourceTree = "<group>"; };
+		576E91C1222E09F900DFC3DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/JobMaster.storyboard; sourceTree = "<group>"; };
+		5774DA7E222D204C00841E3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Jobs.storyboard; sourceTree = "<group>"; };
 		707ED920EC84B5DD53901CEF /* Pods_ManToMan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ManToMan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8403A7D9222E0DAB0034E52A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Jobs.storyboard; sourceTree = "<group>"; };
 		988C3BB821D078D6006FCE2C /* ManToMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ManToMan.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -235,7 +239,8 @@
 			children = (
 				543F0CE121E7444D007D5EED /* AppDelegate */,
 				54FB8D1321D241F700D9DB07 /* Model */,
-				8403A7D8222E0DAB0034E52A /* Jobs.storyboard */,
+				5774DA7D222D204C00841E3A /* Jobs.storyboard */,
+				576E91C0222E09F900DFC3DA /* JobMaster.storyboard */,
 				988C3BBF21D078D6006FCE2C /* Main.storyboard */,
 				54FB8D1A21D27D9A00D9DB07 /* Controller */,
 				988C3BC221D078D7006FCE2C /* Assets.xcassets */,
@@ -322,6 +327,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5774DA7F222D204C00841E3A /* Jobs.storyboard in Resources */,
 				5489B20A21E73A4400199277 /* Pods in Resources */,
 				988C3BC621D078D7006FCE2C /* LaunchScreen.storyboard in Resources */,
 				8403A7DA222E0DAB0034E52A /* Jobs.storyboard in Resources */,
@@ -332,6 +338,7 @@
 				54465527221D2FCC00F3B7BD /* hiddenTopView.xib in Resources */,
 				988C3BC121D078D6006FCE2C /* Main.storyboard in Resources */,
 				547C954921E73EC100F5321C /* Podfile in Resources */,
+				576E91C2222E09F900DFC3DA /* JobMaster.storyboard in Resources */,
 				54FB8D1021D22DB800D9DB07 /* Cities.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,10 +425,18 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8403A7D8222E0DAB0034E52A /* Jobs.storyboard */ = {
+		576E91C0222E09F900DFC3DA /* JobMaster.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8403A7D9222E0DAB0034E52A /* Base */,
+				576E91C1222E09F900DFC3DA /* Base */,
+			);
+			name = JobMaster.storyboard;
+			sourceTree = "<group>";
+		};
+		5774DA7D222D204C00841E3A /* Jobs.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5774DA7E222D204C00841E3A /* Base */,
 			);
 			name = Jobs.storyboard;
 			sourceTree = "<group>";
@@ -570,7 +585,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A5HJWP2XUD;
 				INFOPLIST_FILE = ManToMan/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -592,7 +607,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A5HJWP2XUD;
 				INFOPLIST_FILE = ManToMan/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
