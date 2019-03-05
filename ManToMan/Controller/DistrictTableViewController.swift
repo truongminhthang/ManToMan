@@ -34,7 +34,7 @@ class DistrictTableViewController: UIViewController,UITableViewDelegate,UITableV
         paragraphStype.alignment = NSTextAlignment.center
         let attributed = [NSAttributedString.Key.font: titleLabel.font, NSAttributedString.Key.paragraphStyle: paragraphStype]
         let text = NSMutableAttributedString(string: "Where do you want to work?")
-        text.addAttributes(attributed, range: NSRange(location: 0, length: text.length))
+        text.addAttributes(attributed as [NSAttributedString.Key : Any], range: NSRange(location: 0, length: text.length))
         titleLabel.attributedText = text
         tableView.tableHeaderView = titleLabel
     }

@@ -91,7 +91,7 @@ class VerticalButton: UIButton {
     }
     
     override func draw(_ rect: CGRect) {
-        self.contentEdgeInsets = UIEdgeInsets(top: <#T##CGFloat#>, left: <#T##CGFloat#>, bottom: <#T##CGFloat#>, right: <#T##CGFloat#>)
+//        self.contentEdgeInsets = UIEdgeInsets(top: <#T##CGFloat#>, left: <#T##CGFloat#>, bottom: <#T##CGFloat#>, right: <#T##CGFloat#>)
         self.titleEdgeInsets = UIEdgeInsets(top: -8, left: 0, bottom: 15, right: 0)
         self.titleLabel?.numberOfLines = 2
         

@@ -31,7 +31,7 @@ class CityTableViewController: UIViewController, UITableViewDataSource,UITableVi
         paragraphStype.alignment = NSTextAlignment.center
         let attributed = [NSAttributedString.Key.font: titleLabel.font, NSAttributedString.Key.paragraphStyle: paragraphStype]
         let text = NSMutableAttributedString(string: "Where are you living?")
-        text.addAttributes(attributed, range: NSRange(location: 0, length: text.length))
+        text.addAttributes(attributed as [NSAttributedString.Key : Any], range: NSRange(location: 0, length: text.length))
         titleLabel.attributedText = text
         tableView.tableHeaderView = titleLabel
         
