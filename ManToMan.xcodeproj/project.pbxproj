@@ -23,7 +23,6 @@
 		545348FD21F5646D0051DD29 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545348FC21F5646D0051DD29 /* JSON.swift */; };
 		5453490121F6C80B0051DD29 /* jobs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5453490021F6C80B0051DD29 /* jobs.plist */; };
 		5453490321F6CAB50051DD29 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5453490221F6CAB50051DD29 /* File.swift */; };
-		5453490421F707130051DD29 /* Jobs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 545348FB21F563250051DD29 /* Jobs.storyboard */; };
 		5453490D21F83BCA0051DD29 /* Popview.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5453490C21F83BCA0051DD29 /* Popview.xib */; };
 		5453490F21F83DA90051DD29 /* Popview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5453490E21F83DA90051DD29 /* Popview.swift */; };
 		54734B2F21DF274600DC208C /* RegistrationStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54734B2E21DF274600DC208C /* RegistrationStatusViewController.swift */; };
@@ -43,6 +42,7 @@
 		54FB8D2421D3638200D9DB07 /* AgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FB8D2321D3638200D9DB07 /* AgeViewController.swift */; };
 		54FB8D2621D4C83200D9DB07 /* CityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FB8D2521D4C83200D9DB07 /* CityTableViewCell.swift */; };
 		696B4B9BF89B37D7ED385E6E /* Pods_ManToMan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 707ED920EC84B5DD53901CEF /* Pods_ManToMan.framework */; };
+		8403A7DA222E0DAB0034E52A /* Jobs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8403A7D8222E0DAB0034E52A /* Jobs.storyboard */; };
 		988C3BBC21D078D6006FCE2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988C3BBB21D078D6006FCE2C /* AppDelegate.swift */; };
 		988C3BC121D078D6006FCE2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 988C3BBF21D078D6006FCE2C /* Main.storyboard */; };
 		988C3BC321D078D7006FCE2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 988C3BC221D078D7006FCE2C /* Assets.xcassets */; };
@@ -50,45 +50,45 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		540068D221EF0B7F00998CA7 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
-		540068D421EF0B9300998CA7 /* JobVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobVC.swift; sourceTree = "<group>"; };
-		541D4F4C21DC973F003E7C85 /* DistrictTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistrictTableViewCell.swift; sourceTree = "<group>"; };
-		541D4F4F21DCB73C003E7C85 /* RoundConnerLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundConnerLabel.swift; sourceTree = "<group>"; };
-		5425BE4321F4BA7A007EB9B7 /* VerticalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalButton.swift; sourceTree = "<group>"; };
-		542E213521E5FC600067A916 /* Job-InformationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Job-InformationVC.swift"; sourceTree = "<group>"; };
+		540068D221EF0B7F00998CA7 /* ChatVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		540068D421EF0B9300998CA7 /* JobVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobVC.swift; sourceTree = "<group>"; };
+		541D4F4C21DC973F003E7C85 /* DistrictTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DistrictTableViewCell.swift; sourceTree = "<group>"; };
+		541D4F4F21DCB73C003E7C85 /* RoundConnerLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundConnerLabel.swift; sourceTree = "<group>"; };
+		5425BE4321F4BA7A007EB9B7 /* VerticalButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalButton.swift; sourceTree = "<group>"; };
+		542E213521E5FC600067A916 /* Job-InformationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Job-InformationVC.swift"; sourceTree = "<group>"; };
 		543CB55321E799B5002DC31A /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		543F0CDB21E74372007D5EED /* JSQMessagesViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = JSQMessagesViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		543F0CDD21E74377007D5EED /* JSQSystemSoundPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = JSQSystemSoundPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		543F0CDF21E7437B007D5EED /* ApiAI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ApiAI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		543F0CE321E745E8007D5EED /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		543F0CE321E745E8007D5EED /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		543F0CE521E7509C007D5EED /* SpeechManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechManager.swift; sourceTree = "<group>"; };
-		543F274421F540DF004D7908 /* popoverServiceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = popoverServiceVC.swift; sourceTree = "<group>"; };
-		54465524221D2FCC00F3B7BD /* hiddenTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hiddenTopView.swift; sourceTree = "<group>"; };
-		54465525221D2FCC00F3B7BD /* hiddenTopView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = hiddenTopView.xib; sourceTree = "<group>"; };
-		545348FB21F563250051DD29 /* Jobs.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Jobs.storyboard; path = /Users/toan/Desktop/ManToMan/ManToMan/Base.lproj/Jobs.storyboard; sourceTree = "<absolute>"; };
+		543F274421F540DF004D7908 /* popoverServiceVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = popoverServiceVC.swift; sourceTree = "<group>"; };
+		54465524221D2FCC00F3B7BD /* hiddenTopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = hiddenTopView.swift; sourceTree = "<group>"; };
+		54465525221D2FCC00F3B7BD /* hiddenTopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = hiddenTopView.xib; sourceTree = "<group>"; };
 		545348FC21F5646D0051DD29 /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		5453490021F6C80B0051DD29 /* jobs.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = jobs.plist; sourceTree = "<group>"; };
 		5453490221F6CAB50051DD29 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
-		5453490C21F83BCA0051DD29 /* Popview.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Popview.xib; sourceTree = "<group>"; };
-		5453490E21F83DA90051DD29 /* Popview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popview.swift; sourceTree = "<group>"; };
-		54734B2E21DF274600DC208C /* RegistrationStatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationStatusViewController.swift; sourceTree = "<group>"; };
-		54734B3021DF279E00DC208C /* RegistrationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationCell.swift; sourceTree = "<group>"; };
+		5453490C21F83BCA0051DD29 /* Popview.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Popview.xib; sourceTree = "<group>"; };
+		5453490E21F83DA90051DD29 /* Popview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Popview.swift; sourceTree = "<group>"; };
+		54734B2E21DF274600DC208C /* RegistrationStatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationStatusViewController.swift; sourceTree = "<group>"; };
+		54734B3021DF279E00DC208C /* RegistrationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationCell.swift; sourceTree = "<group>"; };
 		547C954821E73EC100F5321C /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5489B20721E7395C00199277 /* libApiAI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; name = libApiAI.a; path = "../../../../../../../../../../../Users/toan/Library/Developer/Xcode/DerivedData/ManToMan-bduawhflqntmjrafzvlocirnnfpa/Build/Products/Debug-iphoneos/libApiAI.a"; sourceTree = SDKROOT; };
 		5489B20921E73A4400199277 /* Pods */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Pods; sourceTree = "<group>"; };
-		548B99FE21EDC8CB00193310 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		548B99FE21EDC8CB00193310 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		54B7C3F721E78A9A004B4FA8 /* JSQMessagesViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = JSQMessagesViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		54FB8D0F21D22DB800D9DB07 /* Cities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Cities.plist; sourceTree = "<group>"; };
 		54FB8D1121D22DBF00D9DB07 /* Districts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Districts.plist; sourceTree = "<group>"; };
 		54FB8D1421D2460900D9DB07 /* GetDataFromPlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDataFromPlist.swift; sourceTree = "<group>"; };
 		54FB8D1621D2611A00D9DB07 /* City District.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "City District.swift"; sourceTree = "<group>"; };
-		54FB8D1B21D27DDE00D9DB07 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
-		54FB8D1D21D27E0B00D9DB07 /* CityTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTableViewController.swift; sourceTree = "<group>"; };
-		54FB8D1F21D27E1B00D9DB07 /* DistrictTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistrictTableViewController.swift; sourceTree = "<group>"; };
-		54FB8D2121D3604C00D9DB07 /* GenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderViewController.swift; sourceTree = "<group>"; };
-		54FB8D2321D3638200D9DB07 /* AgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeViewController.swift; sourceTree = "<group>"; };
-		54FB8D2521D4C83200D9DB07 /* CityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTableViewCell.swift; sourceTree = "<group>"; };
+		54FB8D1B21D27DDE00D9DB07 /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		54FB8D1D21D27E0B00D9DB07 /* CityTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityTableViewController.swift; sourceTree = "<group>"; };
+		54FB8D1F21D27E1B00D9DB07 /* DistrictTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DistrictTableViewController.swift; sourceTree = "<group>"; };
+		54FB8D2121D3604C00D9DB07 /* GenderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenderViewController.swift; sourceTree = "<group>"; };
+		54FB8D2321D3638200D9DB07 /* AgeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgeViewController.swift; sourceTree = "<group>"; };
+		54FB8D2521D4C83200D9DB07 /* CityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityTableViewCell.swift; sourceTree = "<group>"; };
 		707ED920EC84B5DD53901CEF /* Pods_ManToMan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ManToMan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8403A7D9222E0DAB0034E52A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Jobs.storyboard; sourceTree = "<group>"; };
 		988C3BB821D078D6006FCE2C /* ManToMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ManToMan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		988C3BBB21D078D6006FCE2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		988C3BC021D078D6006FCE2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -235,7 +235,7 @@
 			children = (
 				543F0CE121E7444D007D5EED /* AppDelegate */,
 				54FB8D1321D241F700D9DB07 /* Model */,
-				545348FB21F563250051DD29 /* Jobs.storyboard */,
+				8403A7D8222E0DAB0034E52A /* Jobs.storyboard */,
 				988C3BBF21D078D6006FCE2C /* Main.storyboard */,
 				54FB8D1A21D27D9A00D9DB07 /* Controller */,
 				988C3BC221D078D7006FCE2C /* Assets.xcassets */,
@@ -324,13 +324,13 @@
 			files = (
 				5489B20A21E73A4400199277 /* Pods in Resources */,
 				988C3BC621D078D7006FCE2C /* LaunchScreen.storyboard in Resources */,
+				8403A7DA222E0DAB0034E52A /* Jobs.storyboard in Resources */,
 				5453490D21F83BCA0051DD29 /* Popview.xib in Resources */,
 				5453490121F6C80B0051DD29 /* jobs.plist in Resources */,
 				54FB8D1221D22DBF00D9DB07 /* Districts.plist in Resources */,
 				988C3BC321D078D7006FCE2C /* Assets.xcassets in Resources */,
 				54465527221D2FCC00F3B7BD /* hiddenTopView.xib in Resources */,
 				988C3BC121D078D6006FCE2C /* Main.storyboard in Resources */,
-				5453490421F707130051DD29 /* Jobs.storyboard in Resources */,
 				547C954921E73EC100F5321C /* Podfile in Resources */,
 				54FB8D1021D22DB800D9DB07 /* Cities.plist in Resources */,
 			);
@@ -344,8 +344,6 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ManToMan/Pods-ManToMan-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ApiAI/ApiAI.framework",
@@ -353,8 +351,6 @@
 				"${BUILT_PRODUCTS_DIR}/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ApiAI.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQMessagesViewController.framework",
@@ -370,15 +366,11 @@
 			buildActionMask = 8;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-ManToMan-checkManifestLockResult.txt",
 			);
@@ -426,6 +418,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		8403A7D8222E0DAB0034E52A /* Jobs.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8403A7D9222E0DAB0034E52A /* Base */,
+			);
+			name = Jobs.storyboard;
+			sourceTree = "<group>";
+		};
 		988C3BBF21D078D6006FCE2C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
