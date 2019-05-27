@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18D0AF53229B8FC5007B72A5 /* JobMasterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D0AF52229B8FC5007B72A5 /* JobMasterController.swift */; };
+		18D0AF55229B95AE007B72A5 /* JobCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D0AF54229B95AE007B72A5 /* JobCell.swift */; };
+		18D0AF57229B95CE007B72A5 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D0AF56229B95CE007B72A5 /* WebViewController.swift */; };
+		18D0AF5A229B9670007B72A5 /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D0AF59229B9670007B72A5 /* PopupView.swift */; };
+		18D0AF5C229B968C007B72A5 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D0AF5B229B968C007B72A5 /* Button.swift */; };
+		18D0AF5E229B96B4007B72A5 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D0AF5D229B96B4007B72A5 /* Extension.swift */; };
 		540068D321EF0B7F00998CA7 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540068D221EF0B7F00998CA7 /* ChatVC.swift */; };
-		540068D521EF0B9300998CA7 /* JobVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540068D421EF0B9300998CA7 /* JobVC.swift */; };
 		541D4F4D21DC973F003E7C85 /* DistrictTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D4F4C21DC973F003E7C85 /* DistrictTableViewCell.swift */; };
 		541D4F5021DCB73C003E7C85 /* RoundConnerLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D4F4F21DCB73C003E7C85 /* RoundConnerLabel.swift */; };
-		5425BE4421F4BA7A007EB9B7 /* VerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5425BE4321F4BA7A007EB9B7 /* VerticalButton.swift */; };
-		542E213621E5FC600067A916 /* Job-InformationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542E213521E5FC600067A916 /* Job-InformationVC.swift */; };
 		543CB55421E799B5002DC31A /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543CB55321E799B5002DC31A /* Global.swift */; };
 		543F0CDE21E74377007D5EED /* JSQSystemSoundPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 543F0CDD21E74377007D5EED /* JSQSystemSoundPlayer.framework */; };
 		543F0CE421E745E8007D5EED /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543F0CE321E745E8007D5EED /* ChatViewController.swift */; };
 		543F0CE621E7509C007D5EED /* SpeechManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543F0CE521E7509C007D5EED /* SpeechManager.swift */; };
-		543F274521F540DF004D7908 /* popoverServiceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543F274421F540DF004D7908 /* popoverServiceVC.swift */; };
 		54465526221D2FCC00F3B7BD /* hiddenTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54465524221D2FCC00F3B7BD /* hiddenTopView.swift */; };
 		54465527221D2FCC00F3B7BD /* hiddenTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54465525221D2FCC00F3B7BD /* hiddenTopView.xib */; };
 		545348FD21F5646D0051DD29 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545348FC21F5646D0051DD29 /* JSON.swift */; };
@@ -50,19 +52,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18D0AF52229B8FC5007B72A5 /* JobMasterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobMasterController.swift; sourceTree = "<group>"; };
+		18D0AF54229B95AE007B72A5 /* JobCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobCell.swift; sourceTree = "<group>"; };
+		18D0AF56229B95CE007B72A5 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		18D0AF59229B9670007B72A5 /* PopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupView.swift; sourceTree = "<group>"; };
+		18D0AF5B229B968C007B72A5 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		18D0AF5D229B96B4007B72A5 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		540068D221EF0B7F00998CA7 /* ChatVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
-		540068D421EF0B9300998CA7 /* JobVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobVC.swift; sourceTree = "<group>"; };
 		541D4F4C21DC973F003E7C85 /* DistrictTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DistrictTableViewCell.swift; sourceTree = "<group>"; };
 		541D4F4F21DCB73C003E7C85 /* RoundConnerLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundConnerLabel.swift; sourceTree = "<group>"; };
-		5425BE4321F4BA7A007EB9B7 /* VerticalButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalButton.swift; sourceTree = "<group>"; };
-		542E213521E5FC600067A916 /* Job-InformationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Job-InformationVC.swift"; sourceTree = "<group>"; };
 		543CB55321E799B5002DC31A /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		543F0CDB21E74372007D5EED /* JSQMessagesViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = JSQMessagesViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		543F0CDD21E74377007D5EED /* JSQSystemSoundPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = JSQSystemSoundPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		543F0CDF21E7437B007D5EED /* ApiAI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ApiAI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		543F0CE321E745E8007D5EED /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		543F0CE521E7509C007D5EED /* SpeechManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechManager.swift; sourceTree = "<group>"; };
-		543F274421F540DF004D7908 /* popoverServiceVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = popoverServiceVC.swift; sourceTree = "<group>"; };
 		54465524221D2FCC00F3B7BD /* hiddenTopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = hiddenTopView.swift; sourceTree = "<group>"; };
 		54465525221D2FCC00F3B7BD /* hiddenTopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = hiddenTopView.xib; sourceTree = "<group>"; };
 		545348FC21F5646D0051DD29 /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
@@ -113,6 +117,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18D0AF58229B961A007B72A5 /* PopupView+Extension */ = {
+			isa = PBXGroup;
+			children = (
+				18D0AF59229B9670007B72A5 /* PopupView.swift */,
+				18D0AF5B229B968C007B72A5 /* Button.swift */,
+				18D0AF5D229B96B4007B72A5 /* Extension.swift */,
+			);
+			path = "PopupView+Extension";
+			sourceTree = "<group>";
+		};
 		1F49767698E4D746DD36A903 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +171,7 @@
 			children = (
 				548B99FE21EDC8CB00193310 /* TabBarController.swift */,
 				543F0CE221E744E7007D5EED /* ChatVC */,
+				18D0AF58229B961A007B72A5 /* PopupView+Extension */,
 				548B99FC21EDC84E00193310 /* JobVC */,
 			);
 			path = TabBarVC;
@@ -165,11 +180,10 @@
 		548B99FC21EDC84E00193310 /* JobVC */ = {
 			isa = PBXGroup;
 			children = (
+				18D0AF52229B8FC5007B72A5 /* JobMasterController.swift */,
+				18D0AF54229B95AE007B72A5 /* JobCell.swift */,
+				18D0AF56229B95CE007B72A5 /* WebViewController.swift */,
 				5453490721F83A420051DD29 /* Popview */,
-				540068D421EF0B9300998CA7 /* JobVC.swift */,
-				543F274421F540DF004D7908 /* popoverServiceVC.swift */,
-				5425BE4321F4BA7A007EB9B7 /* VerticalButton.swift */,
-				542E213521E5FC600067A916 /* Job-InformationVC.swift */,
 			);
 			path = JobVC;
 			sourceTree = "<group>";
@@ -386,32 +400,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				543F274521F540DF004D7908 /* popoverServiceVC.swift in Sources */,
 				54FB8D1E21D27E0B00D9DB07 /* CityTableViewController.swift in Sources */,
 				543F0CE621E7509C007D5EED /* SpeechManager.swift in Sources */,
-				5425BE4421F4BA7A007EB9B7 /* VerticalButton.swift in Sources */,
 				54465526221D2FCC00F3B7BD /* hiddenTopView.swift in Sources */,
 				540068D321EF0B7F00998CA7 /* ChatVC.swift in Sources */,
 				54734B2F21DF274600DC208C /* RegistrationStatusViewController.swift in Sources */,
 				548B99FF21EDC8CB00193310 /* TabBarController.swift in Sources */,
 				54FB8D2221D3604C00D9DB07 /* GenderViewController.swift in Sources */,
-				540068D521EF0B9300998CA7 /* JobVC.swift in Sources */,
-				542E213621E5FC600067A916 /* Job-InformationVC.swift in Sources */,
 				54FB8D2621D4C83200D9DB07 /* CityTableViewCell.swift in Sources */,
 				541D4F4D21DC973F003E7C85 /* DistrictTableViewCell.swift in Sources */,
 				54FB8D2421D3638200D9DB07 /* AgeViewController.swift in Sources */,
 				5453490321F6CAB50051DD29 /* File.swift in Sources */,
+				18D0AF53229B8FC5007B72A5 /* JobMasterController.swift in Sources */,
 				5453490F21F83DA90051DD29 /* Popview.swift in Sources */,
+				18D0AF57229B95CE007B72A5 /* WebViewController.swift in Sources */,
 				545348FD21F5646D0051DD29 /* JSON.swift in Sources */,
 				54FB8D1C21D27DDE00D9DB07 /* StartViewController.swift in Sources */,
+				18D0AF5C229B968C007B72A5 /* Button.swift in Sources */,
 				54FB8D2021D27E1B00D9DB07 /* DistrictTableViewController.swift in Sources */,
 				541D4F5021DCB73C003E7C85 /* RoundConnerLabel.swift in Sources */,
 				54734B3121DF279E00DC208C /* RegistrationCell.swift in Sources */,
 				54FB8D1721D2611A00D9DB07 /* City District.swift in Sources */,
+				18D0AF55229B95AE007B72A5 /* JobCell.swift in Sources */,
 				54FB8D1521D2460900D9DB07 /* GetDataFromPlist.swift in Sources */,
+				18D0AF5E229B96B4007B72A5 /* Extension.swift in Sources */,
 				543F0CE421E745E8007D5EED /* ChatViewController.swift in Sources */,
 				988C3BBC21D078D6006FCE2C /* AppDelegate.swift in Sources */,
 				543CB55421E799B5002DC31A /* Global.swift in Sources */,
+				18D0AF5A229B9670007B72A5 /* PopupView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,7 +584,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = A5HJWP2XUD;
+				DEVELOPMENT_TEAM = 4ASLFJP3M3;
 				INFOPLIST_FILE = ManToMan/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -590,7 +606,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = A5HJWP2XUD;
+				DEVELOPMENT_TEAM = 4ASLFJP3M3;
 				INFOPLIST_FILE = ManToMan/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
