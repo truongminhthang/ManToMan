@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		185004A722A0D06300DACA3A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185004A622A0D06300DACA3A /* WebKit.framework */; };
 		18D0AF53229B8FC5007B72A5 /* JobMasterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D0AF52229B8FC5007B72A5 /* JobMasterController.swift */; };
 		18D0AF55229B95AE007B72A5 /* JobCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D0AF54229B95AE007B72A5 /* JobCell.swift */; };
 		18D0AF57229B95CE007B72A5 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D0AF56229B95CE007B72A5 /* WebViewController.swift */; };
@@ -52,6 +53,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		185004A622A0D06300DACA3A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		18D0AF52229B8FC5007B72A5 /* JobMasterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobMasterController.swift; sourceTree = "<group>"; };
 		18D0AF54229B95AE007B72A5 /* JobCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobCell.swift; sourceTree = "<group>"; };
 		18D0AF56229B95CE007B72A5 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				185004A722A0D06300DACA3A /* WebKit.framework in Frameworks */,
 				54B7C3F821E78A9A004B4FA8 /* JSQMessagesViewController.framework in Frameworks */,
 				543F0CDE21E74377007D5EED /* JSQSystemSoundPlayer.framework in Frameworks */,
 				696B4B9BF89B37D7ED385E6E /* Pods_ManToMan.framework in Frameworks */,
@@ -266,6 +269,7 @@
 		F2503710A76B39BB091D74F6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				185004A622A0D06300DACA3A /* WebKit.framework */,
 				54B7C3F721E78A9A004B4FA8 /* JSQMessagesViewController.framework */,
 				543F0CDF21E7437B007D5EED /* ApiAI.framework */,
 				543F0CDD21E74377007D5EED /* JSQSystemSoundPlayer.framework */,
