@@ -7,56 +7,38 @@
 //
 
 import UIKit
-typealias Json = Dictionary<String,Any>
-struct Data{
-    var title: String
-    var salary: String
-    var jobs: String
-    var location: String
-    var status: String
-    var showJobDetail: String
-    var showWeb: String
-    var phone: String
-    
-}
 
 class JobMasterViewController: UIViewController, UITableViewDelegate, UITableViewDataSource , JobCellDelegate{
+    @IBOutlet weak var jobTableView: UITableView!
+    
+    var job = [Jobs]()
     
     @IBOutlet var headerButton: [Button]!
     
-    @IBOutlet weak var  popupView: PopupView!
+    @IBOutlet weak var locationButton: Button!
+    
+    @IBOutlet weak var salaryButton: Button!
+    
+    @IBOutlet weak var jobsButton: Button!
+    
+    @IBOutlet var popupView1: PopupView1!
+    
+    @IBOutlet var popupView2: PopupView2!
+    
+    @IBOutlet var popupView3: PopupView3!
     
     @IBOutlet weak var headerView: UIView!
     
-    @IBOutlet weak var jobTableView: UITableView!
-    
-    var data: [Data] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         jobTableView.delegate = self
         jobTableView.dataSource = self
         setupTableView()
-        let urlString = "https://5ce261f6e3ced20014d3593e.mockapi.io/api/v1/jobs"
-        makeRequestAPI(urlString: urlString, completedHandler: {
-            var data = [Data]()
-            for item in $0 {
-                let title = (item["title"] as? String ) ?? ""
-                let salary = (item["salary"] as? String ) ?? ""
-                let jobs = (item["jobs"] as? String ) ?? ""
-                let location = (item["location"] as? String ) ?? ""
-                let status = (item["status"] as? String ) ?? ""
-                let showJobDetail = (item["showJobDetail"] as? String ) ?? ""
-                let showWeb = (item["showWeb"] as? String ) ?? ""
-                let phone = (item["phone"] as? String ) ?? ""
-                let job = Data(title: title, salary: salary, jobs: jobs, location: location, status: status, showJobDetail: showJobDetail, showWeb: showWeb, phone: phone)
-                data.append(job)
-            }
-            self.data = data
-            DispatchQueue.main.async {
-                self.jobTableView.reloadData()
-            }
-        })
+        getApiJobs()
+        popupView1.setupSupportView(containerView: view, dropButton: locationButton)
+        popupView2.setupSupportView(containerView: view, dropButton: salaryButton)
+        popupView3.setupSupportView(containerView: view, dropButton: jobsButton)
         
         // Do any additional setup after loading the view.
     }
@@ -67,27 +49,34 @@ class JobMasterViewController: UIViewController, UITableViewDelegate, UITableVie
         jobTableView.isScrollEnabled = true
         jobTableView.tableFooterView = UIView(frame: CGRect.zero)
     }
+    func getApiJobs() {
+        DataService.requestData.getJobs { (data) in
+            self.job = data
+            self.jobTableView.reloadData()
+        }
+    }
     
-    @IBAction func selectButton(sender: Button) {
-        headerButton.forEach{$0.isSelected = false}
-        sender.isSelected = !sender.isSelected
-        addPopupView()
-        popupView.layoutNeckView(sender)
-        
+    @IBAction func onClickSelectedButton (_ sender: Button){
+        if sender.isSelected == true  {
+            sender.isSelected = false
+        } else {
+            for button in headerButton{
+                button.isSelected = false
+            }
+            sender.isSelected = true
+        }
     }
-    private func addPopupView(){
-        view.addSubview(popupView)
-        popupView.fill(left: 0, top: nil, right: 0, bottom: -100)
-        popupView.topAnchor.constraint(equalTo: headerView.bottomAnchor).isActive = true
-        //        popupView.topAnchor.constraint(equalTo: headerView.bottomAnchor, constant: 4).isActive = true
-    }
+    
+}
+
+extension JobMasterViewController {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data.count
+        return job.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! JobCell
-        let dataCell = data[indexPath.row]
+        let dataCell = job[indexPath.row]
         cell.title.text = dataCell.title
         cell.salary.text = dataCell.salary
         cell.jobs.text = dataCell.jobs
@@ -99,14 +88,14 @@ class JobMasterViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     func showCellWeb(index: Int) {
-        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let sb = UIStoryboard(name: "Jobs", bundle: nil)
         guard let webView = sb.instantiateViewController(withIdentifier: "ShowWeb") as? WebViewController else {return}
-        webView.viewWeb = data[index].showWeb
+        webView.viewWeb = job[index].showWeb
         navigationController?.pushViewController(webView, animated: true)
     }
     
     func callCellPhone(index: Int) {
-        dialNumber(number: data[index].phone)
+        dialNumber(number: job[index].phone)
     }
     
     func dialNumber(number : String) {
@@ -121,29 +110,6 @@ class JobMasterViewController: UIViewController, UITableViewDelegate, UITableVie
             // add error message here
             print("Sai so")
         }
-    }
-    func makeRequestAPI(urlString: String, completedHandler: @escaping ([Json]) -> Void) {
-        let session = URLSession(configuration: .default)
-        guard let url = URL(string: urlString) else {return}
-        var request = URLRequest(url: url, cachePolicy: .returnCacheDataElseLoad, timeoutInterval: 1000)
-        request.httpMethod = "GET"
-        let dataTask2 = session.dataTask(with: request) { (data, response, error) in
-            guard error == nil else {
-                print(error!.localizedDescription)
-                return
-            }
-            
-            guard let response = response else {return}
-            guard let data = data else {return}
-            do {
-                let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as! [Json]
-                completedHandler(json)
-            }catch {
-                print(error.localizedDescription)
-            }
-            
-            }.resume()
-        
     }
     
     

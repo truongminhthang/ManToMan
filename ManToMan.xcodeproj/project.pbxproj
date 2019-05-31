@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		185004A722A0D06300DACA3A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185004A622A0D06300DACA3A /* WebKit.framework */; };
 		18D0AF53229B8FC5007B72A5 /* JobMasterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D0AF52229B8FC5007B72A5 /* JobMasterController.swift */; };
 		18D0AF55229B95AE007B72A5 /* JobCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D0AF54229B95AE007B72A5 /* JobCell.swift */; };
 		18D0AF57229B95CE007B72A5 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D0AF56229B95CE007B72A5 /* WebViewController.swift */; };
@@ -22,7 +23,7 @@
 		543F0CE621E7509C007D5EED /* SpeechManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543F0CE521E7509C007D5EED /* SpeechManager.swift */; };
 		54465526221D2FCC00F3B7BD /* hiddenTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54465524221D2FCC00F3B7BD /* hiddenTopView.swift */; };
 		54465527221D2FCC00F3B7BD /* hiddenTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54465525221D2FCC00F3B7BD /* hiddenTopView.xib */; };
-		545348FD21F5646D0051DD29 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545348FC21F5646D0051DD29 /* JSON.swift */; };
+		545348FD21F5646D0051DD29 /* Data+Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545348FC21F5646D0051DD29 /* Data+Service.swift */; };
 		5453490121F6C80B0051DD29 /* jobs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5453490021F6C80B0051DD29 /* jobs.plist */; };
 		5453490321F6CAB50051DD29 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5453490221F6CAB50051DD29 /* File.swift */; };
 		5453490D21F83BCA0051DD29 /* Popview.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5453490C21F83BCA0051DD29 /* Popview.xib */; };
@@ -52,6 +53,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		185004A622A0D06300DACA3A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		18D0AF52229B8FC5007B72A5 /* JobMasterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobMasterController.swift; sourceTree = "<group>"; };
 		18D0AF54229B95AE007B72A5 /* JobCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobCell.swift; sourceTree = "<group>"; };
 		18D0AF56229B95CE007B72A5 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
@@ -69,7 +71,7 @@
 		543F0CE521E7509C007D5EED /* SpeechManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechManager.swift; sourceTree = "<group>"; };
 		54465524221D2FCC00F3B7BD /* hiddenTopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = hiddenTopView.swift; sourceTree = "<group>"; };
 		54465525221D2FCC00F3B7BD /* hiddenTopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = hiddenTopView.xib; sourceTree = "<group>"; };
-		545348FC21F5646D0051DD29 /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		545348FC21F5646D0051DD29 /* Data+Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Service.swift"; sourceTree = "<group>"; };
 		5453490021F6C80B0051DD29 /* jobs.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = jobs.plist; sourceTree = "<group>"; };
 		5453490221F6CAB50051DD29 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		5453490C21F83BCA0051DD29 /* Popview.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Popview.xib; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				185004A722A0D06300DACA3A /* WebKit.framework in Frameworks */,
 				54B7C3F821E78A9A004B4FA8 /* JSQMessagesViewController.framework in Frameworks */,
 				543F0CDE21E74377007D5EED /* JSQSystemSoundPlayer.framework in Frameworks */,
 				696B4B9BF89B37D7ED385E6E /* Pods_ManToMan.framework in Frameworks */,
@@ -202,7 +205,7 @@
 			children = (
 				54FB8D1421D2460900D9DB07 /* GetDataFromPlist.swift */,
 				54FB8D1621D2611A00D9DB07 /* City District.swift */,
-				545348FC21F5646D0051DD29 /* JSON.swift */,
+				545348FC21F5646D0051DD29 /* Data+Service.swift */,
 				543CB55321E799B5002DC31A /* Global.swift */,
 			);
 			path = Model;
@@ -266,6 +269,7 @@
 		F2503710A76B39BB091D74F6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				185004A622A0D06300DACA3A /* WebKit.framework */,
 				54B7C3F721E78A9A004B4FA8 /* JSQMessagesViewController.framework */,
 				543F0CDF21E7437B007D5EED /* ApiAI.framework */,
 				543F0CDD21E74377007D5EED /* JSQSystemSoundPlayer.framework */,
@@ -414,7 +418,7 @@
 				18D0AF53229B8FC5007B72A5 /* JobMasterController.swift in Sources */,
 				5453490F21F83DA90051DD29 /* Popview.swift in Sources */,
 				18D0AF57229B95CE007B72A5 /* WebViewController.swift in Sources */,
-				545348FD21F5646D0051DD29 /* JSON.swift in Sources */,
+				545348FD21F5646D0051DD29 /* Data+Service.swift in Sources */,
 				54FB8D1C21D27DDE00D9DB07 /* StartViewController.swift in Sources */,
 				18D0AF5C229B968C007B72A5 /* Button.swift in Sources */,
 				54FB8D2021D27E1B00D9DB07 /* DistrictTableViewController.swift in Sources */,

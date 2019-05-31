@@ -7,12 +7,12 @@
 //
 
 import UIKit
-@IBDesignable
 class Button: UIButton {
+    weak var popupView: PopupView?
     override var isSelected: Bool{
         didSet{
             backgroundColor = isSelected ? UIColor.white : UIColor.clear
-            //            titleLabel?.textColor = isSelected ? UIColor.red : UIColor.white
+            popupView?.isOpen = isSelected
         }
     }
     override func draw(_ rect: CGRect) {
@@ -32,5 +32,3 @@ class Button: UIButton {
     }
     
 }
-
-
